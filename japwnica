@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Executable to byte-array text file.
+# Byte-array text file to insertion of executable into RAM.
+# Execution of binary from RAM.
+
+arfl=byte_array_tmp_"$(date +%Y%m%d%H%M%S%N)-$2".dat
+cargo run "$1"  >> "$arfl" &&
+sed -i 's/\[//g' "$arfl"
+sed -i 's/\]//g' "$arfl"
+cat header.c "$arfl" footer.c > "$arfl"_packed.c
+
+gcc "$arfl"_packed.c -o $2
+
+echo "The target of $1 has been packed for execution from $2 via RAM."
