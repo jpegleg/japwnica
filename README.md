@@ -22,6 +22,6 @@ Compiling c_byte_array tool ahead of time example:
 $ cargo build --release
    Compiling c_byte_array v0.1.0 (/home/admin/workspace/japwnicka)
     Finished release [optimized] target(s) in 0.21s
-$ cp target/release/japwnica ./cba
+$ cp target/release/c_byte_array ./cba
 $ sed -i 's/cargo run/.\/cba/g' japwnica
 ```
