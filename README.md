@@ -11,7 +11,7 @@ $ ./dmesgp #dmesg code is loaded into RAM and executed from RAM
 
 This tool is for educational purposes. Enjoy!
 
-Requirements:
+Requirements for creating a loader binary using japwnica defaults:
 - gcc ( can be replaced by clang etc, just edit japwnica and swap gcc for the compiler of your choice)
 - cargo ( the conversion tool c_byte_array is written in Rust, by default japwnica uses `cargo run` from pwd to execute it, however that can be replaced by a path to the compiled binary )
 - sed
