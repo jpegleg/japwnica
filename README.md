@@ -5,7 +5,7 @@ This is a demonstration of inserting of a binary (ELF) into a C program which lo
 ```
 $ bash ./japwnica /usr/bin/dmesg dmesgp
     Finished dev [unoptimized + debuginfo] target(s) in 0.00s
-     Running `target/debug/japwnicka /usr/bin/dmesg`
+     Running `target/debug/c_byte_array /usr/bin/dmesg`
 $ ./dmesgp #dmesg code is loaded into RAM and executed from RAM
 ```
 
